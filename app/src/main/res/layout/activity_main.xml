@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name1" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number1" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mobile_number"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewGrpSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/size_of_the_gp" />
+
+            <EditText
+                android:id="@+id/editTextGrpSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/size_of_the_group"
+                android:inputType="textPersonName" />
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false" />
+
+            <Button
+                android:id="@+id/buttoncfrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
